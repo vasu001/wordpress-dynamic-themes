@@ -1,0 +1,1418 @@
+* {
+	margin             : 0;
+	padding            : 0;
+	-webkit-box-sizing : border-box;
+	box-sizing         : border-box;
+}
+
+html,
+body {
+	background  : -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+	background  : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+	font-size   : 62.5%;
+	font-family : 'Lato', sans-serif;
+}
+
+#front-header {
+	height : 100vh;
+}
+
+#front-header #front-top-header {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : justify;
+	-ms-flex-pack    : justify;
+	justify-content  : space-between;
+	padding          : 1rem 0rem;
+	background-color : #1e1f26;
+}
+
+#front-header #front-top-header .social-icons {
+	-webkit-box-flex : 1;
+	-ms-flex         : 1;
+	flex             : 1;
+	margin-top       : 0.8rem;
+}
+
+#front-header #front-top-header .social-icons a {
+	color              : #4d648d;
+	text-decoration    : none;
+	padding            : 0.4rem 1rem;
+	-webkit-transition : color 0.4s;
+	transition         : color 0.4s;
+}
+
+#front-header #front-top-header .social-icons a:first-child {
+	margin-left : 1rem;
+}
+
+#front-header #front-top-header .social-icons a:hover {
+	color : #fff;
+}
+
+#front-header #front-top-header #contacts-info {
+	-webkit-box-flex : 1;
+	-ms-flex         : 1;
+	flex             : 1;
+	font-size        : 1.4rem;
+	text-align       : center;
+	margin-top       : 0.8rem;
+}
+
+#front-header #front-top-header #contacts-info a {
+	text-decoration    : none;
+	color              : #4d648d;
+	padding            : 0.4rem 1rem;
+	-webkit-transition : color 0.4s;
+	transition         : color 0.4s;
+}
+
+#front-header #front-top-header #contacts-info a:hover {
+	color : #fff;
+}
+
+#front-header #front-top-header #search-form {
+	text-align       : right;
+	margin-right     : 1rem;
+	-webkit-box-flex : 1;
+	-ms-flex         : 1;
+	flex             : 1;
+}
+
+#front-header #front-top-header #search-form .form-group .form-control {
+	width         : 30rem;
+	height        : 3rem;
+	border        : 1 solid transparent;
+	padding       : 0.6em 1rem;
+	font-size     : 1.2rem;
+	border-radius : 0.2rem;
+}
+
+#front-header #front-middle-header {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack    : center;
+	justify-content  : center;
+	background-color : #283655;
+}
+
+#front-header #front-middle-header nav {
+	padding          : 1rem;
+	font-size        : 1.8rem;
+	-webkit-box-flex : 1;
+	-ms-flex         : 1;
+	flex             : 1;
+}
+
+#front-header #front-middle-header nav .nav-ul {
+	display         : -webkit-box;
+	display         : -ms-flexbox;
+	display         : flex;
+	-ms-flex-pack   : distribute;
+	justify-content : space-around;
+}
+
+#front-header #front-middle-header nav .nav-ul .nav-list {
+	list-style : none;
+	margin     : 1.8rem 1rem;
+}
+
+#front-header #front-middle-header nav .nav-ul .nav-list .nav-link {
+	color              : #fff;
+	text-decoration    : none;
+	border-bottom      : 0.2rem solid transparent;
+	padding-bottom     : 2.6rem;
+	-webkit-transition : all 0.6s linear;
+	transition         : all 0.6s linear;
+}
+
+#front-header #front-middle-header nav .nav-ul .nav-list .nav-link:hover {
+	border-bottom : 0.2rem solid #fff;
+}
+
+#front-header #front-middle-header #logo {
+	text-align : center;
+}
+
+#front-header #front-middle-header #logo .logo-img {
+	width : 8rem;
+}
+
+#front-header #front-bottom-header {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack    : center;
+	justify-content  : center;
+	padding          : 8rem 0rem;
+	text-align       : center;
+	height           : 80vh;
+}
+
+#front-header #front-bottom-header div {
+	color             : #fff;
+	position          : relative;
+	top               : 50%;
+	-webkit-transform : translateY(-20%);
+	transform         : translateY(-20%);
+}
+
+#front-header #front-bottom-header div h1 {
+	font-size     : 10rem;
+	font-weight   : 300;
+	margin-bottom : 1rem;
+}
+
+#front-header #front-bottom-header div p {
+	font-size : 4rem;
+}
+
+#front-header #front-header-small {
+	display : none;
+}
+
+#front-header #front-header-nav-small {
+	display : none;
+}
+
+#front-header #arrow-down {
+	position   : relative;
+	text-align : center;
+}
+
+#front-header #arrow-down a {
+	color       : #fff;
+	font-weight : 300;
+}
+
+#front-articles {
+	display         : -webkit-box;
+	display         : -ms-flexbox;
+	display         : flex;
+	-ms-flex-pack   : distribute;
+	justify-content : space-around;
+	padding         : 2rem 0rem;
+}
+
+#front-articles .article {
+	background : -webkit-gradient(linear, left top, right top, from(#1e1f26), to(#4d648d));
+	background : linear-gradient(to right, #1e1f26, #4d648d);
+}
+
+#front-articles .article .inner-article {
+	width   : 30vw;
+	padding : 5rem 0.75rem;
+}
+
+#front-articles .article .inner-article h2 {
+	font-size   : 4rem;
+	font-weight : 300;
+	text-align  : center;
+	color       : #fff;
+}
+
+#front-articles .article .inner-article nav {
+	padding          : 1rem;
+	font-size        : 1.6rem;
+	-webkit-box-flex : 1;
+	-ms-flex         : 1;
+	flex             : 1;
+}
+
+#front-articles .article .inner-article nav .nav-ul {
+	display               : -webkit-box;
+	display               : -ms-flexbox;
+	display               : flex;
+	-webkit-box-orient    : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction    : column;
+	flex-direction        : column;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list {
+	list-style            : none;
+	background            : -webkit-gradient(linear, left top, right top, from(#1e1f26), to(#4d648d));
+	background            : linear-gradient(to right, #1e1f26, #4d648d);
+	color                 : #fff;
+	margin                : 0.5rem 0rem;
+	display               : -webkit-box;
+	display               : -ms-flexbox;
+	display               : flex;
+	-webkit-box-orient    : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction    : column;
+	flex-direction        : column;
+	background-color      : #fff;
+	border-bottom         : 0.1rem solid #283655;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list:last-child {
+	border-bottom : 0rem;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	padding : 1rem;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a {
+	color           : #fff;
+	text-decoration : none;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a h3 {
+	width         : 10rem;
+	height        : 10rem;
+	border-radius : 50%;
+	margin-top    : 1rem;
+	padding       : 1rem;
+	background    : -webkit-gradient(linear, left top, left bottom, from(#1e1f26), to(#4d648d));
+	background    : linear-gradient(#1e1f26, #4d648d);
+	text-align    : center;
+	font-size     : 2.4rem;
+	font-weight   : 100;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link {
+	text-decoration : none;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+	margin      : 1rem 0.75rem;
+	padding     : 0rem 0.75rem;
+	color       : #fff;
+	font-size   : 2.4rem;
+	font-weight : 100;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two p {
+	margin     : 1rem 0.75rem;
+	padding    : 0rem 0.75rem;
+	text-align : justify;
+}
+
+#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-two {
+	margin : 2rem auto;
+}
+
+#front-footer {
+	background        : #1e1f26;
+	color             : #fff;
+	font-size         : 2rem;
+	padding           : 2rem;
+	display           : -webkit-box;
+	display           : -ms-flexbox;
+	display           : flex;
+	-webkit-box-pack  : space-evenly;
+	-ms-flex-pack     : space-evenly;
+	justify-content   : space-evenly;
+	-webkit-box-align : center;
+	-ms-flex-align    : center;
+	align-items       : center;
+}
+
+#front-footer .container p {
+	margin-left : 1rem;
+	text-align  : center;
+}
+
+#front-footer .container .social-icons {
+	margin-top : 2rem;
+}
+
+#front-footer .container .social-icons a {
+	color              : #4d648d;
+	text-decoration    : none;
+	padding            : 0.4rem 1rem;
+	-webkit-transition : color 0.4s;
+	transition         : color 0.4s;
+}
+
+#front-footer .container .social-icons a:first-child {
+	margin-left : 1rem;
+}
+
+#front-footer .container .social-icons a:last-child {
+	margin-right : 1rem;
+}
+
+#front-footer .container .social-icons a:hover {
+	color : #fff;
+}
+
+#front-footer .nav-ul {
+	display               : -webkit-box;
+	display               : -ms-flexbox;
+	display               : flex;
+	-webkit-box-orient    : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction    : column;
+	flex-direction        : column;
+}
+
+#front-footer .nav-ul .nav-list {
+	list-style-type : none;
+	margin-bottom   : 0.4rem;
+}
+
+#front-footer .nav-ul .nav-list .nav-link {
+	color              : #4d648d;
+	text-decoration    : none;
+	-webkit-transition : all 0.4s;
+	transition         : all 0.4s;
+}
+
+#front-footer .nav-ul .nav-list .nav-link:hover {
+	color : #fff;
+}
+
+@media all and (max-width : 500px) {
+	#front-header {
+		height : 60vh;
+	}
+	#front-header #arrow-down {
+		display : none;
+	}
+	#front-header #front-top-header {
+		display : none;
+	}
+	#front-header #front-middle-header {
+		display : none;
+	}
+	#front-header #front-header-nav-small {
+		background-color : #283655;
+	}
+	#front-header #front-header-nav-small .nav-ul {
+		display     : block;
+		margin-left : 1rem;
+		padding     : 1rem;
+	}
+	#front-header #front-header-nav-small .nav-ul .nav-list {
+		list-style    : none;
+		margin-bottom : 0.5rem;
+		font-size     : 1rem;
+	}
+	#front-header #front-header-nav-small .nav-ul .nav-list .nav-link {
+		color           : #fff;
+		text-decoration : none;
+	}
+	#front-header #front-header-small {
+		display          : block;
+		background-color : #283655;
+	}
+	#front-header #front-header-small nav {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+	}
+	#front-header #front-header-small nav a {
+		-webkit-box-flex : 1;
+		-ms-flex         : 1;
+		flex             : 1;
+		margin-left      : 1rem;
+		padding          : 1rem;
+	}
+	#front-header #front-header-small nav a .logo-img {
+		width : 6rem;
+	}
+	#front-header #front-header-small nav .btn-nav {
+		background   : #283655;
+		border       : 0rem;
+		color        : #fff;
+		cursor       : pointer;
+		margin-right : 1.2rem;
+		font-size    : 1.6rem;
+	}
+	#front-header #front-bottom-header {
+		padding : 4rem 0rem;
+	}
+	#front-header #front-bottom-header div {
+		color : #fff;
+	}
+	#front-header #front-bottom-header div h1 {
+		font-size     : 2.4rem;
+		font-weight   : 400;
+		margin-bottom : 1rem;
+	}
+	#front-header #front-bottom-header div p {
+		font-size : 1.2rem;
+	}
+	#front-articles {
+		display               : -webkit-box;
+		display               : -ms-flexbox;
+		display               : flex;
+		-webkit-box-orient    : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction    : column;
+		flex-direction        : column;
+		padding               : 1rem 0;
+	}
+	#front-articles .article {
+		width      : 100vw;
+		margin-top : 1rem;
+	}
+	#front-articles .article .inner-article {
+		padding : 2rem 0.75rem;
+	}
+	#front-articles .article .inner-article h2 {
+		font-size   : 2.4rem;
+		font-weight : 300;
+		text-align  : center;
+		color       : #fff;
+		width       : 100vw;
+	}
+	#front-articles .article .inner-article nav {
+		padding   : 0.2rem;
+		font-size : 1.6rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list {
+		list-style : none;
+		width      : 100vw;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one {
+		width : 100vw;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a {
+		color           : #fff;
+		text-decoration : none;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a h3 {
+		width     : 6rem;
+		height    : 6rem;
+		font-size : 1.2rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		font-size   : 1.8rem;
+		font-weight : 300;
+	}
+	#front-footer {
+		font-size : 1.6rem;
+		display   : block;
+	}
+	#front-footer .container .social-icons {
+		text-align : center;
+	}
+	#front-footer .container .social-icons a {
+		font-size : 1.2rem;
+	}
+	#front-footer .nav-ul {
+		display : none;
+	}
+	#front-footer #logo {
+		display : none;
+	}
+}
+
+@media all and (min-width : 501px) and (max-width : 1191px) {
+	#front-header {
+		height : 66vh;
+	}
+	#front-header #arrow-down {
+		display : none;
+	}
+	#front-header #front-top-header {
+		display : none;
+	}
+	#front-header #front-middle-header {
+		display : none;
+	}
+	#front-header #front-header-nav-small {
+		background-color : #283655;
+	}
+	#front-header #front-header-nav-small .nav-ul {
+		display     : block;
+		margin-left : 1rem;
+		padding     : 1rem;
+	}
+	#front-header #front-header-nav-small .nav-ul .nav-list {
+		list-style    : none;
+		margin-bottom : 0.5rem;
+	}
+	#front-header #front-header-nav-small .nav-ul .nav-list .nav-link {
+		color           : #fff;
+		text-decoration : none;
+		font-size       : 1.4rem;
+	}
+	#front-header #front-header-small {
+		display          : block;
+		background-color : #283655;
+	}
+	#front-header #front-header-small nav {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+	}
+	#front-header #front-header-small nav a {
+		-webkit-box-flex : 1;
+		-ms-flex         : 1;
+		flex             : 1;
+		margin-left      : 1rem;
+		padding          : 1rem;
+	}
+	#front-header #front-header-small nav a .logo-img {
+		width : 8rem;
+	}
+	#front-header #front-header-small nav .btn-nav {
+		background   : #283655;
+		border       : 0rem;
+		color        : #fff;
+		cursor       : pointer;
+		margin-right : 2rem;
+		font-size    : 2rem;
+	}
+	#front-header #front-bottom-header {
+		padding : 4rem 0rem;
+	}
+	#front-header #front-bottom-header div {
+		color : #fff;
+	}
+	#front-header #front-bottom-header div h1 {
+		font-size     : 4rem;
+		font-weight   : 400;
+		margin-bottom : 1rem;
+	}
+	#front-header #front-bottom-header div p {
+		font-size : 2rem;
+	}
+	#front-articles {
+		display               : -webkit-box;
+		display               : -ms-flexbox;
+		display               : flex;
+		-webkit-box-orient    : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction    : column;
+		flex-direction        : column;
+	}
+	#front-articles .article {
+		width      : 100vw;
+		margin-top : 1rem;
+	}
+	#front-articles .article .inner-article h2 {
+		font-size   : 4rem;
+		font-weight : 300;
+		text-align  : center;
+		color       : #fff;
+		width       : 100vw;
+	}
+	#front-articles .article .inner-article nav {
+		padding   : 0.2rem;
+		font-size : 1.4rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list {
+		width : 100vw;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one {
+		-webkit-box-pack : center;
+		-ms-flex-pack    : center;
+		justify-content  : center;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a {
+		color           : #fff;
+		text-decoration : none;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a h3 {
+		width     : 7rem;
+		height    : 7rem;
+		font-size : 1.6rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		font-size   : 2.4rem;
+		font-weight : 300;
+	}
+	#front-footer {
+		font-size : 1.8rem;
+		display   : block;
+	}
+	#front-footer .container .social-icons {
+		text-align : center;
+	}
+	#front-footer .container .social-icons a {
+		font-size : 1.2rem;
+	}
+	#front-footer .nav-ul {
+		display : none;
+	}
+	#front-footer #logo {
+		display : none;
+	}
+}
+
+@media all and (min-width : 1192px) and (max-width : 1366px) {
+	#front-articles .article .inner-article {
+		width : 31vw;
+	}
+}
+
+@media all and (min-width : 1192px) and (max-width : 1600px) {
+	#front-header #arrow-down {
+		bottom : 4rem;
+	}
+	#front-header #front-top-header #contacts-info {
+		font-size : 1.2rem;
+	}
+	#front-header #front-middle-header nav {
+		font-size : 1.5rem;
+	}
+	#front-header #front-bottom-header div h1 {
+		font-size : 7rem;
+	}
+	#front-header #front-bottom-header div p {
+		font-size : 2.4rem;
+	}
+	#front-articles .article .inner-article h2 {
+		font-size : 3rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a h3 {
+		font-size : 2rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		font-size : 2rem;
+	}
+	#front-articles .article .inner-article nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two p {
+		font-size : 1.4rem;
+	}
+	#front-footer {
+		font-size : 1.6rem;
+	}
+}
+
+#blog-header {
+	background : #283655;
+}
+
+#blog-header #blog-middle-header {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack    : center;
+	justify-content  : center;
+	background-color : #283655;
+}
+
+#blog-header #blog-middle-header nav {
+	padding          : 1rem;
+	font-size        : 1.8rem;
+	-webkit-box-flex : 1;
+	-ms-flex         : 1;
+	flex             : 1;
+}
+
+#blog-header #blog-middle-header nav .nav-ul {
+	display         : -webkit-box;
+	display         : -ms-flexbox;
+	display         : flex;
+	-ms-flex-pack   : distribute;
+	justify-content : space-around;
+}
+
+#blog-header #blog-middle-header nav .nav-ul .nav-list {
+	list-style : none;
+	margin     : 1.8rem 1rem;
+}
+
+#blog-header #blog-middle-header nav .nav-ul .nav-list .nav-link {
+	color              : #fff;
+	text-decoration    : none;
+	border-bottom      : 0.2rem solid transparent;
+	padding-bottom     : 2.6rem;
+	-webkit-transition : all 0.6s linear;
+	transition         : all 0.6s linear;
+}
+
+#blog-header #blog-middle-header nav .nav-ul .nav-list .nav-link:hover {
+	border-bottom : 0.2rem solid #fff;
+}
+
+#blog-header #blog-middle-header #logo {
+	text-align : center;
+}
+
+#blog-header #blog-middle-header #logo .logo-img {
+	width : 8rem;
+}
+
+#blog-header #blog-bottom-header {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack    : center;
+	justify-content  : center;
+	padding          : 8rem 0rem;
+	text-align       : center;
+	background       : -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+	background       : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+}
+
+#blog-header #blog-bottom-header div {
+	color             : #fff;
+	position          : relative;
+	top               : 50%;
+	-webkit-transform : translateY(-20%);
+	transform         : translateY(-20%);
+}
+
+#blog-header #blog-bottom-header div h1 {
+	font-size     : 6rem;
+	font-weight   : 300;
+	margin-bottom : 1rem;
+}
+
+#blog-header #blog-bottom-header div p {
+	font-size : 2.4rem;
+}
+
+#blog-header #blog-header-small {
+	display : none;
+}
+
+#blog-header #blog-header-nav-small {
+	display : none;
+}
+
+#blog-header #arrow-down {
+	position   : relative;
+	text-align : center;
+}
+
+#blog-header #arrow-down a {
+	color       : #fff;
+	font-weight : 300;
+}
+
+#blog-posts {
+	display         : -webkit-box;
+	display         : -ms-flexbox;
+	display         : flex;
+	-ms-flex-pack   : distribute;
+	justify-content : space-around;
+	padding         : 2rem 0rem;
+	background      : -webkit-gradient(linear, left top, right top, from(#eae2cf), to(#d6d1bf));
+	background      : linear-gradient(to right, #eae2cf, #d6d1bf);
+}
+
+#blog-posts .container {
+	display                 : -webkit-box;
+	display                 : -ms-flexbox;
+	display                 : flex;
+	-webkit-box-pack        : justify;
+	-ms-flex-pack           : justify;
+	justify-content         : space-between;
+	-ms-flex-preferred-size : 150rem;
+	flex-basis              : 150rem;
+}
+
+#blog-posts .container #main-blog-side {
+	padding : 2rem;
+}
+
+#blog-posts .container #main-blog-side #date-info {
+	border     : 1px solid #1e1f26;
+	margin     : -7rem 2.5rem 0;
+	font-size  : 1.2rem;
+	background : -webkit-gradient(linear, right top, left top, from(#1e1f26), to(#4d648d));
+	background : linear-gradient(to left, #1e1f26, #4d648d);
+	color      : #fff;
+	width      : 30vw;
+	display    : -webkit-box;
+	display    : -ms-flexbox;
+	display    : flex;
+}
+
+#blog-posts .container #main-blog-side #date-info div a {
+	display         : inline-block;
+	padding         : 2rem 1rem;
+	background      : dodgerblue;
+	text-decoration : none;
+	color           : #fff;
+}
+
+#blog-posts .container #main-blog-side #date-info div p {
+	padding : 2rem 1rem;
+}
+
+#blog-posts .container #main-blog-side h2 {
+	font-size     : 5rem;
+	font-weight   : 300;
+	margin-bottom : 1rem;
+	padding       : 2rem 2.4rem;
+}
+
+#blog-posts .container #main-blog-side nav {
+	font-size : 1.6rem;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul {
+	display               : -webkit-box;
+	display               : -ms-flexbox;
+	display               : flex;
+	-webkit-box-orient    : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction    : column;
+	flex-direction        : column;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list {
+	list-style            : none;
+	color                 : #333;
+	margin                : 0.5rem 0rem;
+	display               : -webkit-box;
+	display               : -ms-flexbox;
+	display               : flex;
+	-webkit-box-orient    : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction    : column;
+	flex-direction        : column;
+	border-bottom         : 0.1rem solid #ddd;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list:last-child {
+	border-bottom : 0rem;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	padding : 1rem 0rem;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a {
+	color           : #fff;
+	text-decoration : none;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a img {
+	width   : 25rem;
+	height  : 15rem;
+	padding : 2rem;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link {
+	text-decoration : none;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+	margin      : 0rem 2.4rem;
+	color       : #333;
+	font-size   : 3.4rem;
+	font-weight : 100;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two p {
+	margin     : 1rem 2.4rem;
+	text-align : justify;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : start;
+	-ms-flex-pack    : start;
+	justify-content  : flex-start;
+	margin           : -1rem 27.4rem 2rem;
+}
+
+#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two .btn-article {
+	border          : 1px solid #333;
+	background      : -webkit-gradient(linear, right top, left top, from(#1e1f26), to(#4d648d));
+	background      : linear-gradient(to left, #1e1f26, #4d648d);
+	color           : #fff;
+	font-size       : 1.8rem;
+	padding         : 1rem 4rem;
+	text-decoration : none;
+}
+
+#blog-posts .container #sidebar-blog-side {
+	padding : 4rem 12rem 1rem 1rem;
+}
+
+#blog-posts .container #sidebar-blog-side h2 {
+	font-size     : 4rem;
+	font-weight   : 300;
+	margin-bottom : 1rem;
+	padding       : 0 0.8rem;
+}
+
+#blog-posts .container #sidebar-blog-side .nav-ul .nav-list {
+	list-style-type : none;
+}
+
+#blog-posts .container #sidebar-blog-side .nav-ul .nav-list .nav-link {
+	display            : inline-block;
+	text-decoration    : none;
+	font-size          : 2rem;
+	color              : #283655;
+	width              : 232%;
+	padding            : 1rem;
+	-webkit-transition : background 0.3s, color 0.2s;
+	transition         : background 0.3s, color 0.2s;
+}
+
+#blog-posts .container #sidebar-blog-side .nav-ul .nav-list .nav-link:hover {
+	background : #1e1f26;
+	color      : #f8ecc2;
+}
+
+@media all and (max-width : 500px) {
+	#blog-header #blog-top-header {
+		display : none;
+	}
+	#blog-header #blog-middle-header {
+		display : none;
+	}
+	#blog-header #blog-header-nav-small {
+		background-color : #283655;
+	}
+	#blog-header #blog-header-nav-small .nav-ul {
+		display     : block;
+		margin-left : 1rem;
+		padding     : 1rem;
+	}
+	#blog-header #blog-header-nav-small .nav-ul .nav-list {
+		list-style    : none;
+		margin-bottom : 0.5rem;
+		font-size     : 1rem;
+	}
+	#blog-header #blog-header-nav-small .nav-ul .nav-list .nav-link {
+		color           : #fff;
+		text-decoration : none;
+	}
+	#blog-header #blog-header-small {
+		display          : block;
+		background-color : #283655;
+	}
+	#blog-header #blog-header-small nav {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+	}
+	#blog-header #blog-header-small nav a {
+		-webkit-box-flex : 1;
+		-ms-flex         : 1;
+		flex             : 1;
+		margin-left      : 1rem;
+		padding          : 1rem;
+	}
+	#blog-header #blog-header-small nav a .logo-img {
+		width : 6rem;
+	}
+	#blog-header #blog-header-small nav .btn-nav {
+		background   : #283655;
+		border       : 0rem;
+		color        : #fff;
+		cursor       : pointer;
+		margin-right : 1.2rem;
+		font-size    : 1.6rem;
+	}
+	#blog-header #blog-bottom-header {
+		padding : 4rem 0rem;
+	}
+	#blog-header #blog-bottom-header div {
+		color : #fff;
+	}
+	#blog-header #blog-bottom-header div h1 {
+		font-size     : 3rem;
+		font-weight   : 400;
+		margin-bottom : 1rem;
+	}
+	#blog-header #blog-bottom-header div p {
+		font-size : 1.4rem;
+	}
+	#blog-posts {
+		display : block;
+	}
+	#blog-posts .container {
+		display : block;
+	}
+	#blog-posts .container #main-blog-side {
+		padding : 2rem;
+	}
+	#blog-posts .container #main-blog-side #date-info {
+		border     : 1px solid linear-gradient(to left, #1e1f26, #4d648d);
+		margin     : -7rem 2.5rem 0;
+		font-size  : 1rem;
+		background : -webkit-gradient(linear, right top, left top, from(#1e1f26), to(#4d648d));
+		background : linear-gradient(to left, #1e1f26, #4d648d);
+		color      : #fff;
+		width      : 76vw;
+		display    : -webkit-box;
+		display    : -ms-flexbox;
+		display    : flex;
+	}
+	#blog-posts .container #main-blog-side #date-info div a {
+		display : none;
+	}
+	#blog-posts .container #main-blog-side #date-info div p {
+		padding : 2rem 1rem;
+	}
+	#blog-posts .container #main-blog-side h2 {
+		font-size     : 3rem;
+		font-weight   : 300;
+		margin-bottom : 1rem;
+		text-align    : left;
+	}
+	#blog-posts .container #main-blog-side nav {
+		font-size : 1.6rem;
+		padding   : 1rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul {
+		display : block;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list {
+		list-style    : none;
+		color         : #333;
+		margin        : 0.5rem 0rem;
+		display       : block;
+		border-bottom : 0.1rem solid #aaa;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list:last-child {
+		border-bottom : 0rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one {
+		display : block;
+		padding : 1rem 0rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a {
+		color           : #fff;
+		text-decoration : none;
+		display         : block;
+		text-align      : center;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a img {
+		width   : 30rem;
+		height  : 10rem;
+		padding : 2rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link {
+		text-decoration : none;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		margin      : 0rem 1.2rem;
+		color       : #333;
+		font-size   : 2.4rem;
+		font-weight : 100;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two p {
+		margin     : 1rem 1.2rem;
+		text-align : justify;
+		font-size  : 1.4rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two {
+		display    : block;
+		padding    : 1rem;
+		margin     : 0 0 1.4rem 0;
+		text-align : left;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two .btn-article {
+		border          : 1px solid #333;
+		background      : -webkit-gradient(linear, right top, left top, from(#1e1f26), to(#4d648d));
+		background      : linear-gradient(to left, #1e1f26, #4d648d);
+		color           : #fff;
+		font-size       : 1.4rem;
+		padding         : 0.75rem 2rem;
+		text-decoration : none;
+		margin-left     : 0.2rem;
+	}
+	#blog-posts .container #sidebar-blog-side {
+		display : none;
+	}
+}
+
+@media all and (min-width : 501px) and (max-width : 1191px) {
+	#blog-header #blog-top-header {
+		display : none;
+	}
+	#blog-header #blog-middle-header {
+		display : none;
+	}
+	#blog-header #blog-header-nav-small {
+		background-color : #283655;
+	}
+	#blog-header #blog-header-nav-small .nav-ul {
+		display     : block;
+		margin-left : 1rem;
+		padding     : 1rem;
+	}
+	#blog-header #blog-header-nav-small .nav-ul .nav-list {
+		list-style    : none;
+		margin-bottom : 0.5rem;
+		font-size     : 1rem;
+	}
+	#blog-header #blog-header-nav-small .nav-ul .nav-list .nav-link {
+		color           : #fff;
+		text-decoration : none;
+		font-size       : 1.4rem;
+	}
+	#blog-header #blog-header-small {
+		display          : block;
+		background-color : #283655;
+	}
+	#blog-header #blog-header-small nav {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+	}
+	#blog-header #blog-header-small nav a {
+		-webkit-box-flex : 1;
+		-ms-flex         : 1;
+		flex             : 1;
+		margin-left      : 1rem;
+		padding          : 1rem;
+	}
+	#blog-header #blog-header-small nav a .logo-img {
+		width : 8rem;
+	}
+	#blog-header #blog-header-small nav .btn-nav {
+		background   : #283655;
+		border       : 0rem;
+		color        : #fff;
+		cursor       : pointer;
+		margin-right : 2rem;
+		font-size    : 2rem;
+	}
+	#blog-header #blog-bottom-header {
+		padding : 6rem 0rem;
+	}
+	#blog-header #blog-bottom-header div {
+		color : #fff;
+	}
+	#blog-header #blog-bottom-header div h1 {
+		font-size     : 3.5rem;
+		font-weight   : 400;
+		margin-bottom : 1rem;
+	}
+	#blog-header #blog-bottom-header div p {
+		font-size : 1.8rem;
+	}
+	#blog-posts {
+		display : block;
+	}
+	#blog-posts .container {
+		display : block;
+	}
+	#blog-posts .container #main-blog-side {
+		padding : 2rem;
+	}
+	#blog-posts .container #main-blog-side #date-info {
+		border     : 1px solid linear-gradient(to left, #1e1f26, #4d648d);
+		margin     : -7rem 2.5rem 0;
+		font-size  : 1.2rem;
+		background : -webkit-gradient(linear, right top, left top, from(#1e1f26), to(#4d648d));
+		background : linear-gradient(to left, #1e1f26, #4d648d);
+		color      : #fff;
+		width      : 93.5%;
+		display    : -webkit-box;
+		display    : -ms-flexbox;
+		display    : flex;
+	}
+	#blog-posts .container #main-blog-side #date-info div a {
+		display         : inline-block;
+		padding         : 2rem 1rem;
+		background      : dodgerblue;
+		text-decoration : none;
+		color           : #fff;
+	}
+	#blog-posts .container #main-blog-side #date-info div p {
+		padding : 2rem 1rem;
+	}
+	#blog-posts .container #main-blog-side h2 {
+		font-size     : 3rem;
+		font-weight   : 300;
+		margin-bottom : 1rem;
+		text-align    : left;
+	}
+	#blog-posts .container #main-blog-side nav {
+		font-size : 1.6rem;
+		padding   : 1rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul {
+		display : block;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list {
+		list-style    : none;
+		color         : #333;
+		margin        : 0.5rem 0rem;
+		display       : block;
+		border-bottom : 0.1rem solid #aaa;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list:last-child {
+		border-bottom : 0rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one {
+		display : block;
+		padding : 1rem 0rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a {
+		color           : #fff;
+		text-decoration : none;
+		display         : block;
+		text-align      : center;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a img {
+		width   : 30rem;
+		height  : 10rem;
+		padding : 2rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link {
+		text-decoration : none;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		margin      : 0rem 1.2rem;
+		color       : #333;
+		font-size   : 2.4rem;
+		font-weight : 100;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two p {
+		margin     : 1rem 1.2rem;
+		text-align : justify;
+		font-size  : 1.4rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two {
+		display    : block;
+		padding    : 1rem;
+		margin     : 0 0 1.4rem 0;
+		text-align : left;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two .btn-article {
+		border          : 1px solid #333;
+		background      : -webkit-gradient(linear, right top, left top, from(#1e1f26), to(#4d648d));
+		background      : linear-gradient(to left, #1e1f26, #4d648d);
+		color           : #fff;
+		font-size       : 1.4rem;
+		padding         : 0.75rem 2rem;
+		text-decoration : none;
+		margin-left     : 0.2rem;
+	}
+	#blog-posts .container #sidebar-blog-side {
+		display : none;
+	}
+}
+
+@media all and (min-width : 1192px) and (max-width : 1366px) {
+	#blog-header #blog-middle-header nav {
+		font-size : 1.5rem;
+	}
+	#blog-posts {
+		padding : 2rem 8rem;
+	}
+	#blog-posts .container #main-blog-side h2 {
+		font-size : 4rem;
+	}
+	#blog-posts .container #main-blog-side nav {
+		font-size : 1.3rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a img {
+		width   : 28rem;
+		height  : 20rem;
+		padding : 1rem 0;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		font-size : 2.5rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two {
+		margin : -5.7rem 30.5rem 2rem;
+		width  : 100%;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two .btn-article {
+		font-size : 1.5rem;
+		padding   : 0.75rem 2rem;
+	}
+	#blog-posts .container #sidebar-blog-side h2 {
+		font-size : 3rem;
+	}
+	#blog-posts .container #sidebar-blog-side .nav-ul .nav-list .nav-link {
+		font-size : 1.5rem;
+	}
+}
+
+@media all and (min-width : 1366px) and (max-width : 1600px) {
+	#blog-header #blog-middle-header nav {
+		font-size : 1.6rem;
+	}
+	#blog-posts {
+		padding : 2rem 8rem;
+	}
+	#blog-posts .container #main-blog-side h2 {
+		font-size : 4rem;
+	}
+	#blog-posts .container #main-blog-side nav {
+		font-size : 1.5rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-one a img {
+		width   : 20rem;
+		height  : 10rem;
+		padding : 2rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-one .nav-list-div-one-two .nav-link h3 {
+		font-size : 3.2rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two {
+		margin : -1rem 22.5rem 2rem;
+	}
+	#blog-posts .container #main-blog-side nav .nav-ul .nav-list .nav-list-div-two .btn-article {
+		font-size : 1.6rem;
+		padding   : 0.75rem 2rem;
+	}
+	#blog-posts .container #sidebar-blog-side h2 {
+		font-size : 3rem;
+	}
+	#blog-posts .container #sidebar-blog-side .nav-ul .nav-list .nav-link {
+		font-size : 1.5rem;
+	}
+}
+
+#blog-header #single-blog-bottom-header {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
+	display          : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack    : center;
+	justify-content  : center;
+	padding          : 8rem 0rem;
+	text-align       : center;
+	background       : -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+	background       : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+}
+
+#blog-header #single-blog-bottom-header div {
+	color             : #fff;
+	position          : relative;
+	top               : 50%;
+	-webkit-transform : translateY(-20%);
+	transform         : translateY(-20%);
+}
+
+#blog-header #single-blog-bottom-header div h1 {
+	font-size     : 6rem;
+	font-weight   : 300;
+	margin-bottom : 1rem;
+}
+
+#blog-header #single-blog-bottom-header div p {
+	font-size : 2.4rem;
+}
+
+#blog-posts .container #main-blog-side #single-blog-page {
+	margin  : 2.4rem;
+	display : block;
+}
+
+#blog-posts .container #main-blog-side #single-blog-page .image {
+	padding : 0 2rem 2rem 0;
+	float   : left;
+}
+
+#blog-posts .container #main-blog-side #single-blog-page .paragraph p {
+	text-align  : justify;
+	font-size   : 1.4rem;
+	font-weight : 400;
+}
